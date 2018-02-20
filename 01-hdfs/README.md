@@ -6,14 +6,30 @@
 
 ## 1. cluster Hadoop
 
-IP: 192.168.10.80
+### Desde la estación Cliente Windows:
 
-User/pass del DCA
+* Descargar putty.exe y colocar en el Escritorio.
+* Ejecutar putty.exe
+* Hostname o IP: 200.12.180.67
+* login as: cectmp
+* Password: ******
 
-Ambari: http://192.168.10.80:8080
-Web: http://<name>.dis.eafit.edu.co
+### Desde una estación Linux o Mac:
 
-Monitoreo del cluster hadoop: http://192.168.10.80:8088
+* Abrir una terminal
+      user@hostname$ ssh cectmp@200.12.180.67
+      Passoword: ***** (password asignado a cectmp)
+
+### Una vez contectado en el servidor 200.12.180.67, ejecute:
+
+        cectmp@urania$ ssh postobon##@192.168.10.115
+        Password: ******** (password asignado a cada usuario)
+
+
+* Hue: http://192.168.10.115:8888 (por la Intranet)
+* Hue: http://<name>.dis.eafit.edu.co
+
+### Monitoreo del cluster hadoop: http://192.168.10.115:8088
 
 ## 2. Gestión de archivos en HDFS
 
@@ -30,6 +46,9 @@ asi, los descarga en formato .zip, uds los deben descomprimir antes de enviarlos
 
 Puede utilizar datos previamente descargados:
 [Gutenberg-dataset-txt-es](datasets/gutenberg-txt-es.zip)
+
+Otros datasets:
+[datasets](datasets)
 
 ## 3. Listar archivos HDFS
 
@@ -107,10 +126,10 @@ comandos:
     * descarga de archivos.
     * etc
 
-    Via la interfaz web de Ambari: Files View
+    Via la interfaz web de Hue: Files View
 
 ## 8. RETO:
 
 Copiar el resto de datasets para el curso, en:
 
-    /user/<username>/datasets
+    /user/postobon##/datasets
