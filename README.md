@@ -4,11 +4,31 @@
 
 ## 0. CONECTARSE AL CLUSTER CLOUDERA:
 
-### Primero conectarse a la VPN del DCA
+### Desde la estación Cliente Windows desde Internet:
 
-* Por SSH:
+* Descargar putty.exe y colocar en el Escritorio.
+* Ejecutar putty.exe
+* Hostname o IP: 200.12.180.67
+* login as: cectmp
+* Password: ******
 
-### Desde putty.exe en Windows:
+* Una vez contectado en el servidor 200.12.180.67, ejecute:
+
+        cectmp@urania$ ssh postobon##@192.168.10.115
+        Password: ******** (password asignado a cada usuario)
+
+### Desde una estación Linux o Mac desde Internet:
+
+* Abrir una terminal
+      user@hostname$ ssh cectmp@200.12.180.67
+      Passoword: ***** (password asignado a cectmp)
+
+* Una vez contectado en el servidor 200.12.180.67, ejecute:
+
+              cectmp@urania$ ssh postobon##@192.168.10.115
+              Password: ******** (password asignado a cada usuario)
+
+### Desde la estación Cliente Windows desde VPN:
 
       Host Name (or IP address):
       192.168.10.115
@@ -17,10 +37,10 @@
 
       Click en "Open"
 
-      username: postobon##      (usuario asignado)
+      login as: postobon##      (usuario asignado)
       password: ********        (password asignado)
 
-### Desde linux o mac: abra una consola:
+### Desde una estación Linux o Mac desde VPN:
 
       $ ssh postobon##@192.168.10.115
       Password: ******** (password asignado)

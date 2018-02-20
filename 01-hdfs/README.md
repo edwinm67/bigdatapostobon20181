@@ -6,7 +6,7 @@
 
 ## 1. cluster Hadoop
 
-### Desde la estación Cliente Windows:
+### Desde la estación Cliente Windows desde Internet:
 
 * Descargar putty.exe y colocar en el Escritorio.
 * Ejecutar putty.exe
@@ -14,16 +14,38 @@
 * login as: cectmp
 * Password: ******
 
-### Desde una estación Linux o Mac:
+* Una vez contectado en el servidor 200.12.180.67, ejecute:
+
+      cectmp@urania$ ssh postobon##@192.168.10.115
+      Password: ******** (password asignado a cada usuario)
+
+### Desde una estación Linux o Mac desde Internet:
 
 * Abrir una terminal
       user@hostname$ ssh cectmp@200.12.180.67
       Passoword: ***** (password asignado a cectmp)
 
-### Una vez contectado en el servidor 200.12.180.67, ejecute:
+* Una vez contectado en el servidor 200.12.180.67, ejecute:
 
-        cectmp@urania$ ssh postobon##@192.168.10.115
-        Password: ******** (password asignado a cada usuario)
+      cectmp@urania$ ssh postobon##@192.168.10.115
+      Password: ******** (password asignado a cada usuario)
+
+### Desde la estación Cliente Windows desde VPN:
+
+      Host Name (or IP address):
+      192.168.10.115
+
+      Port: 22 (dejarlo asi):
+
+      Click en "Open"
+
+      login as: postobon##      (usuario asignado)
+      password: ********        (password asignado)
+
+### Desde una estación Linux o Mac desde VPN:
+
+      $ ssh postobon##@192.168.10.115
+      Password: ******** (password asignado)
 
 
 * Hue: http://192.168.10.115:8888 (por la Intranet)
@@ -39,7 +61,7 @@ Puede descargar datos directamente del sitio:
 
 Comando:
 
-    user@master$ wget -w 2 -m -H "http://www.gutenberg.org/robot/harvest?filetypes[]=txt&langs[]=es"
+      user@master$ wget -w 2 -m -H "http://www.gutenberg.org/robot/harvest?filetypes[]=txt&langs[]=es"
 
 
 asi, los descarga en formato .zip, uds los deben descomprimir antes de enviarlos al HDFS
