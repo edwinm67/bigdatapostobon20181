@@ -45,10 +45,10 @@ Comando:
 asi, los descarga en formato .zip, uds los deben descomprimir antes de enviarlos al HDFS
 
 Puede utilizar datos previamente descargados:
-[Gutenberg-dataset-txt-es](datasets/gutenberg-txt-es.zip)
+[Gutenberg-dataset-txt-es](../datasets/gutenberg-txt-es.zip)
 
 Otros datasets:
-[datasets](datasets)
+[datasets](../datasets)
 
 ## 3. Listar archivos HDFS
 
