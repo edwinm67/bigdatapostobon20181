@@ -2,7 +2,7 @@
 # Curso Big Data - Postobon, 2018-1
 # Profesor: Edwin Montoya M. – emontoya@eafit.edu.co
 
-## 0. CONECTARSE AL CLUSTER HORTONWORKS:
+## 0. CONECTARSE AL CLUSTER CLOUDERA:
 
 ### Primero conectarse a la VPN del DCA
 
@@ -11,7 +11,7 @@
 ### Desde putty.exe en Windows:
 
       Host Name (or IP address):
-      192.168.10.80
+      192.168.10.115
 
       Port: 22 (dejarlo asi):
 
@@ -22,12 +22,14 @@
 
 ### Desde linux o mac: abra una consola:
 
-      $ ssh postobon##@192.168.10.80
+      $ ssh postobon##@192.168.10.115
       Password: ******** (password asignado)
 
 ### Por Web:
 
-Desde un browser: http://192.168.10.80:8080      
+* Desde un browser: http://192.168.10.115:8888 (por la Intranet via VPN)
+* Desde un browser: http://cloudera.dis.eafit.edu.co (por la Internet)
+
 
 ## 1. DATASETS
 
