@@ -5,7 +5,7 @@ from mrjob.step import MRStep
 class MRWordFrequencyCount(MRJob):
 
     def mapper(self, _, line):
-        userid, movieid, genero, rating, date = line.decode('utf-8','ignore').split()
+        userid, movieid, genero, rating, date = line.decode('utf-8','ignore').split(',')
         yield date, 1
 
     def reducer(self, date, values):

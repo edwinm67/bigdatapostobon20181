@@ -4,7 +4,7 @@ from mrjob.job import MRJob
 class MRWordFrequencyCount(MRJob):
 
     def mapper(self, _, line):
-        se, idemp, salario, year = line.decode('utf-8','ignore').split()
+        se, idemp, salario, year = line.decode('utf-8','ignore').split(',')
         yield se, int(salario)
 
     def reducer(self, se, values):
