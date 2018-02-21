@@ -7,7 +7,12 @@
 #
 # Tambien cambian los nombres especificos de las librerias, revise en cada caso y haga los ajustes
 #
-HADOOP_COMMON_JAR=$HADOOP_HOME/client/hadoop-mapreduce-client-core.jar:$HADOOP_HOME/client/hadoop-common.jar
+# HADOOP_COMMON_JAR=$HADOOP_HOME/client/hadoop-mapreduce-client-core.jar:$HADOOP_HOME/client/hadoop-common.jar
+
+# para CLOUDERA 5.14.0
+HADOOP_HOME=/opt/cloudera/parcels/CDH-5.14.0-1.cdh5.14.0.p0.24
+HADOOP_COMMON_JAR=$HADOOP_HOME/lib/hadoop/client/hadoop-mapreduce-client-core.jar:$HADOOP_HOME/lib/hadoop/hadoop-common.jar
+
 
 mkdir wordcount_classes
 
