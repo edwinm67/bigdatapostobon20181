@@ -132,7 +132,7 @@ Crear variable de ambiente: HADOOP_STREAMING_HOME para HORTONWORKS:
 
 Crear variable de ambiente: HADOOP_STREAMING_HOME para CLOUDERA CDH 5.14:
 
->   user@master$ export HADOOP_STREAMING_HOME=/opt/cloudera/parcels/CDH-5.14.0-1.cdh5.14.0.p0.24
+>   user@master$ export HADOOP_STREAMING_HOME=/opt/cloudera/parcels/CDH-5.14.0-1.cdh5.14.0.p0.24/lib/hadoop-mapreduce
 
 Ejecutar:
 
