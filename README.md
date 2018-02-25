@@ -24,6 +24,7 @@
 ### Desde una estación Linux o Mac desde Internet:
 
 * Abrir una terminal
+
       user@hostname$ ssh postobon##@192.168.10.115
       Passoword: ***** (password asignado a cada usuario)
 
